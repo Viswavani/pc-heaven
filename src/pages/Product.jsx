@@ -16,7 +16,7 @@ import len12 from '../images/len12.png';
 function Product(){
     return(
         <>
-        <div className='mt-4'>
+        <div className='mt-8'>
             <a href='../pa' className='text-gray-400 ml-30'>Home &gt; Laptops &gt; Lenovo Laptops &gt; Lenovo Legion 9 Intel Core i9 13th Gen 13980HX</a>
         </div>
         <div className="w-full flex flex-column gap-x-15 mt-10">
