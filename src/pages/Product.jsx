@@ -1,5 +1,6 @@
 import lenova from '../images/lenova.jpg';
 import Home from '../pages/Home';
+import Navbar from '../components/Navbar';
 import len1 from '../images/len1.jpg';
 import len2 from '../images/len2.jpg';
 import len3 from '../images/len3.jpg';
@@ -17,12 +18,10 @@ function Product(){
     return(
         <>
         <div className='mt-8'>
-            <a href='../pa' className='text-gray-400 ml-30'>Home &gt; Laptops &gt; Lenovo Laptops &gt; Lenovo Legion 9 Intel Core i9 13th Gen 13980HX</a>
+            <a href='../pages/Home' className='text-gray-400 ml-30'>Home &gt; Laptops &gt; Lenovo Laptops &gt; Lenovo Legion 9 Intel Core i9 13th Gen 13980HX</a>
         </div>
         <div className="w-full flex flex-column gap-x-15 mt-10">
-            <a href={Home}>
-                <img className="-pl-4 w-120 h-120 ml-30 mb-10 bg-white border-l-2 border-r-2 border-t-8 border-b-8 border-solid border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700" src={lenova} alt="product image" />
-            </a>
+            <img className="-pl-4 w-120 h-120 ml-30 mb-10 bg-white border-l-2 border-r-2 border-t-8 border-b-8 border-solid border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 cursor-pointer" src={lenova} alt="product image" />
             <div className="w-200 p-6 bg-white float-right">
                 <a href="#">
                     <h5 className="mb-4 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Lenovo Legion 9 Intel Core i9 13th Gen 13980HX-
