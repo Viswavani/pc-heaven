@@ -1,7 +1,7 @@
 import secure from '../images/secure.png';
 import pay from '../images/pay.png';
 import razor from '../images/razor.png';
-import Product from '../pages/Product';
+import {Link} from 'react-router-dom';
 
 function Shopping(){
     return(  
@@ -125,7 +125,7 @@ function Shopping(){
                         </tbody>
                     </table>
                 </div>
-                <a href='../pages/Product'><p className='font-semibold'>&lt; Continue Shopping</p></a>
+                <Link to={'/Product'}><p className='font-semibold'>&lt; Continue Shopping</p></Link>
             </div>
 
            {/*  right section */}
@@ -178,9 +178,11 @@ function Shopping(){
                         </table>
                     </div>
                 </div>
+                <Link to={'/Payment'}>
                 <button type="button" class="text-white bg-[#2557D6] hover:bg-[#2557D6]/90 focus:ring-4 focus:ring-[#2557D6]/50 focus:outline-none font-medium rounded-2xl text-xl px-32 py-3.5 text-center inline-flex items-center dark:focus:ring-[#2557D6]/50 me-2 mt-7 mb-2 cursor-pointer">
                     Pay Now ₹4,50,190
                 </button>
+                </Link>
                 <div className="flex justify-center items-center mt-5 mb-10">
                     <img className="h-6" src={secure} alt="asset" />
                     <img className="h-6" src={razor} alt="asset" />

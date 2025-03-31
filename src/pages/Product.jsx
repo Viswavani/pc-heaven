@@ -1,6 +1,4 @@
 import lenova from '../images/lenova.jpg';
-import Home from '../pages/Home';
-import Navbar from '../components/Navbar';
 import len1 from '../images/len1.jpg';
 import len2 from '../images/len2.jpg';
 import len3 from '../images/len3.jpg';
@@ -13,12 +11,13 @@ import len9 from '../images/len9.jpg';
 import len10 from '../images/len10.jpg';
 import len11 from '../images/len11.png';
 import len12 from '../images/len12.png';
+import { Link } from 'react-router-dom';
 
 function Product(){
     return(
         <>
-        <div className='mt-8'>
-            <a href='../pages/Home' className='text-gray-400 ml-30'>Home &gt; Laptops &gt; Lenovo Laptops &gt; Lenovo Legion 9 Intel Core i9 13th Gen 13980HX</a>
+        <div className='mt-24'>
+            <Link to={'/'}> <p className='text-gray-400 ml-30 cursor-pointer'>Home &gt; Laptops &gt; Lenovo Laptops &gt; Lenovo Legion 9 Intel Core i9 13th Gen 13980HX</p></Link>
         </div>
         <div className="w-full flex flex-column gap-x-15 mt-10">
             <img className="-pl-4 w-120 h-120 ml-30 mb-10 bg-white border-l-2 border-r-2 border-t-8 border-b-8 border-solid border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 cursor-pointer" src={lenova} alt="product image" />
@@ -39,23 +38,25 @@ function Product(){
                     <div>
                         <a href="#" className="inline- mb-5 px-3 py-4 text-xl font-medium font-bold text-center text-blue-700 bg-green-300 rounded-lg hover:bg-green-300 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">₹ 4,50,190</a>
                     </div>
-                    <p className='text-lime-600 font-bold text-2xl'>Save 28%<br/><span className='text-gray-400 font-normal text-base'>Inclusive of All Taxes</span></p>
+                    <p className='text-lime-600 font-bold text-2xl -mt-5'>Save 28%<br/><span className='text-gray-400 font-normal text-base'>Inclusive of All Taxes</span></p>
                 </div>
                 <div className='flex flex-column gap-x-4 mt-4'>
                         <ul>
                             <li>
-                                <select className='bg-gray-300 rounded-lg p-6 cursor-pointer'>
+                                <select className='bg-gray-300 rounded-lg p-3 cursor-pointer'>
                                     <option value="one">1</option>
                                     <option value="two">2</option>
                                 </select>
                             </li>
                         </ul>
+                    <Link to={'/Shopping'}>
                     <button type="button" className="text-white cursor-pointer bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 text-xl rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         <svg class="w-3.5 h-3.5 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
                             <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
                         </svg>
                         Add To Cart
                     </button>
+                    </Link>
                 </div>
            </div>
         </div>
